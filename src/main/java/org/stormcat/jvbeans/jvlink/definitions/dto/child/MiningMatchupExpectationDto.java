@@ -20,67 +20,47 @@ package org.stormcat.jvbeans.jvlink.definitions.dto.child;
  * @since 0.1
  *
  */
-public class WinOddsDto {
+public class MiningMatchupExpectationDto {
 
-    /** 　　馬番 */
+    /** 馬番 */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 1, byteLength = 2)
     private java.lang.Integer horseNo;
 
-    /** 　　オッズ */
+    /** 予測スコア */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 3, byteLength = 4)
-    private java.lang.String odds;
-
-    /** 　　人気順 */
-    @org.stormcat.jvbeans.annotation.JvProperty(position = 7, byteLength = 2)
-    private java.lang.String betRank;
+    private java.lang.Float expectationScore;
 
 
     /**
-     * 　　馬番を返します。
-     * @return 　　馬番
+     * 馬番を返します。
+     * @return 馬番
      */
     public java.lang.Integer getHorseNo() {
         return horseNo;
     }
 
     /**
-     * 　　馬番を設定します。
-     * @param horseNo 　　馬番
+     * 馬番を設定します。
+     * @param horseNo 馬番
      */
     public void setHorseNo(java.lang.Integer horseNo) {
         this.horseNo = horseNo;
     }
 
     /**
-     * 　　オッズを返します。
-     * @return 　　オッズ
+     * 予測スコアを返します。
+     * @return 予測スコア
      */
-    public java.lang.String getOdds() {
-        return odds;
+    public java.lang.Float getExpectationScore() {
+        return expectationScore;
     }
 
     /**
-     * 　　オッズを設定します。
-     * @param odds 　　オッズ
+     * 予測スコアを設定します。
+     * @param expectationScore 予測スコア
      */
-    public void setOdds(java.lang.String odds) {
-        this.odds = odds;
-    }
-
-    /**
-     * 　　人気順を返します。
-     * @return 　　人気順
-     */
-    public java.lang.String getBetRank() {
-        return betRank;
-    }
-
-    /**
-     * 　　人気順を設定します。
-     * @param betRank 　　人気順
-     */
-    public void setBetRank(java.lang.String betRank) {
-        this.betRank = betRank;
+    public void setExpectationScore(java.lang.Float expectationScore) {
+        this.expectationScore = expectationScore;
     }
 
 }

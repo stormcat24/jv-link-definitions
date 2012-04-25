@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2011 the Stormcat Project.
+ * Copyright 2009-2012 the Stormcat Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -156,7 +156,7 @@ public class RaceDetailDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
     @org.stormcat.jvbeans.annotation.JvProperty(position = 453, byteLength = 120)
     private java.lang.String raceNameNoteEng;
 
-    /** 競走名略称１0文字 */
+    /** 競走名略称10文字 */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 573, byteLength = 20)
     private java.lang.String raceNameShortChar10;
 
@@ -300,19 +300,19 @@ public class RaceDetailDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
     @org.stormcat.jvbeans.annotation.JvProperty(position = 966, byteLength = 4)
     private java.lang.String obstacleMileTime;
 
-    /** 前３ハロン */
+    /** 前3ハロン */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 970, byteLength = 3)
     private java.lang.Float firstFurlong3;
 
-    /** 前４ハロン */
+    /** 前4ハロン */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 973, byteLength = 3)
     private java.lang.Float firstFurlong4;
 
-    /** 後３ハロン */
+    /** 後3ハロン */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 976, byteLength = 3)
     private java.lang.Float lastFurlong3;
 
-    /** 後４ハロン */
+    /** 後4ハロン */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 979, byteLength = 3)
     private java.lang.Float lastFurlong4;
 
@@ -598,16 +598,16 @@ public class RaceDetailDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
     }
 
     /**
-     * 競走名略称１0文字を返します。
-     * @return 競走名略称１0文字
+     * 競走名略称10文字を返します。
+     * @return 競走名略称10文字
      */
     public java.lang.String getRaceNameShortChar10() {
         return raceNameShortChar10;
     }
 
     /**
-     * 競走名略称１0文字を設定します。
-     * @param raceNameShortChar10 競走名略称１0文字
+     * 競走名略称10文字を設定します。
+     * @param raceNameShortChar10 競走名略称10文字
      */
     public void setRaceNameShortChar10(java.lang.String raceNameShortChar10) {
         this.raceNameShortChar10 = raceNameShortChar10;
@@ -1174,64 +1174,64 @@ public class RaceDetailDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
     }
 
     /**
-     * 前３ハロンを返します。
-     * @return 前３ハロン
+     * 前3ハロンを返します。
+     * @return 前3ハロン
      */
     public java.lang.Float getFirstFurlong3() {
         return firstFurlong3;
     }
 
     /**
-     * 前３ハロンを設定します。
-     * @param firstFurlong3 前３ハロン
+     * 前3ハロンを設定します。
+     * @param firstFurlong3 前3ハロン
      */
     public void setFirstFurlong3(java.lang.Float firstFurlong3) {
         this.firstFurlong3 = firstFurlong3;
     }
 
     /**
-     * 前４ハロンを返します。
-     * @return 前４ハロン
+     * 前4ハロンを返します。
+     * @return 前4ハロン
      */
     public java.lang.Float getFirstFurlong4() {
         return firstFurlong4;
     }
 
     /**
-     * 前４ハロンを設定します。
-     * @param firstFurlong4 前４ハロン
+     * 前4ハロンを設定します。
+     * @param firstFurlong4 前4ハロン
      */
     public void setFirstFurlong4(java.lang.Float firstFurlong4) {
         this.firstFurlong4 = firstFurlong4;
     }
 
     /**
-     * 後３ハロンを返します。
-     * @return 後３ハロン
+     * 後3ハロンを返します。
+     * @return 後3ハロン
      */
     public java.lang.Float getLastFurlong3() {
         return lastFurlong3;
     }
 
     /**
-     * 後３ハロンを設定します。
-     * @param lastFurlong3 後３ハロン
+     * 後3ハロンを設定します。
+     * @param lastFurlong3 後3ハロン
      */
     public void setLastFurlong3(java.lang.Float lastFurlong3) {
         this.lastFurlong3 = lastFurlong3;
     }
 
     /**
-     * 後４ハロンを返します。
-     * @return 後４ハロン
+     * 後4ハロンを返します。
+     * @return 後4ハロン
      */
     public java.lang.Float getLastFurlong4() {
         return lastFurlong4;
     }
 
     /**
-     * 後４ハロンを設定します。
-     * @param lastFurlong4 後４ハロン
+     * 後4ハロンを設定します。
+     * @param lastFurlong4 後4ハロン
      */
     public void setLastFurlong4(java.lang.Float lastFurlong4) {
         this.lastFurlong4 = lastFurlong4;

@@ -16,29 +16,23 @@
 package org.stormcat.jvbeans.jvlink.definitions.dto;
 
  /**
- * レコードフォーマットID {@link DM} に対応するDtoです。
+ * レコードフォーマットID {@link JG} に対応するDtoです。
  * @author jv-beans-gen
  * @since 0.1
  *
  */
-@org.stormcat.jvbeans.annotation.JvBean(recordTypeId = "DM", byteLength = 303)
-public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
+@org.stormcat.jvbeans.annotation.JvBean(recordTypeId = "JG", byteLength = 80)
+public class HorseExclusionDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
 
     /**
-     * {@code DM}に対応したデータ区分を表現するEnumです。
+     * {@code JG}に対応したデータ区分を表現するEnumです。
      * @author jv-beans-gen
      * @since 0.3
      *
      */
-    public enum DataMiningExpectationDataDiv implements org.stormcat.jvbeans.config.DataDiv {
+    public enum HorseExclusionDataDiv implements org.stormcat.jvbeans.config.DataDiv {
 
-        _1("前日予想(出馬発表後)", "1"),
-
-        _2("当日予想(天候馬場発表後)", "2"),
-
-        _3("直前予想(馬体重発表後)", "3"),
-
-        _7("成績(月曜)", "7"),
+        _1("初期値", "1"),
 
         _0("該当レコード削除(提供ミスなどの理由による)", "0"),
 
@@ -55,7 +49,7 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
          * @param name 名称
          * @param value 値
          */
-        private DataMiningExpectationDataDiv(String name, String value) {
+        private HorseExclusionDataDiv(String name, String value) {
             this.name = name;
             this.value = value;
         }
@@ -112,13 +106,25 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
     @org.stormcat.jvbeans.annotation.JvProperty(position = 26, byteLength = 2)
     private java.lang.Integer raceNo;
 
-    /** データ作成時分 */
-    @org.stormcat.jvbeans.annotation.JvProperty(position = 28, byteLength = 4)
-    private java.lang.String dataCreateTime;
+    /** 血統登録番号 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 28, byteLength = 10)
+    private java.lang.String bloodRegistNo;
 
-    /** マイニング予想 */
-    @org.stormcat.jvbeans.annotation.JvProperty(position = 32, byteLength = 15, repeatCount = 18)
-    private java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningExpectationDto> miningExpectationItems;
+    /** 馬名 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 38, byteLength = 36)
+    private java.lang.String horseName;
+
+    /** 出馬投票受付順番 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 74, byteLength = 3)
+    private java.lang.Integer entryOrderNo;
+
+    /** 出走区分 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 77, byteLength = 1)
+    private java.lang.Integer entryDiv;
+
+    /** 除外状態区分 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 78, byteLength = 1)
+    private java.lang.Integer exclusionStateDiv;
 
 
     /**
@@ -142,7 +148,7 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
      */
     @Override
     public org.stormcat.jvbeans.config.DataDiv getDataDiv() {
-        return DataMiningExpectationDataDiv.valueOf(java.lang.String.format("_%s", dataDiv));
+        return HorseExclusionDataDiv.valueOf(java.lang.String.format("_%s", dataDiv));
     }
 
     /**
@@ -266,35 +272,83 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
     }
 
     /**
-     * データ作成時分を返します。
-     * @return データ作成時分
+     * 血統登録番号を返します。
+     * @return 血統登録番号
      */
-    public java.lang.String getDataCreateTime() {
-        return dataCreateTime;
+    public java.lang.String getBloodRegistNo() {
+        return bloodRegistNo;
     }
 
     /**
-     * データ作成時分を設定します。
-     * @param dataCreateTime データ作成時分
+     * 血統登録番号を設定します。
+     * @param bloodRegistNo 血統登録番号
      */
-    public void setDataCreateTime(java.lang.String dataCreateTime) {
-        this.dataCreateTime = dataCreateTime;
+    public void setBloodRegistNo(java.lang.String bloodRegistNo) {
+        this.bloodRegistNo = bloodRegistNo;
     }
 
     /**
-     * マイニング予想を返します。
-     * @return マイニング予想
+     * 馬名を返します。
+     * @return 馬名
      */
-    public java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningExpectationDto> getMiningExpectationItems() {
-        return miningExpectationItems;
+    public java.lang.String getHorseName() {
+        return horseName;
     }
 
     /**
-     * マイニング予想を設定します。
-     * @param miningExpectationItems マイニング予想
+     * 馬名を設定します。
+     * @param horseName 馬名
      */
-    public void setMiningExpectationItems(java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningExpectationDto> miningExpectationItems) {
-        this.miningExpectationItems = miningExpectationItems;
+    public void setHorseName(java.lang.String horseName) {
+        this.horseName = horseName;
+    }
+
+    /**
+     * 出馬投票受付順番を返します。
+     * @return 出馬投票受付順番
+     */
+    public java.lang.Integer getEntryOrderNo() {
+        return entryOrderNo;
+    }
+
+    /**
+     * 出馬投票受付順番を設定します。
+     * @param entryOrderNo 出馬投票受付順番
+     */
+    public void setEntryOrderNo(java.lang.Integer entryOrderNo) {
+        this.entryOrderNo = entryOrderNo;
+    }
+
+    /**
+     * 出走区分を返します。
+     * @return 出走区分
+     */
+    public java.lang.Integer getEntryDiv() {
+        return entryDiv;
+    }
+
+    /**
+     * 出走区分を設定します。
+     * @param entryDiv 出走区分
+     */
+    public void setEntryDiv(java.lang.Integer entryDiv) {
+        this.entryDiv = entryDiv;
+    }
+
+    /**
+     * 除外状態区分を返します。
+     * @return 除外状態区分
+     */
+    public java.lang.Integer getExclusionStateDiv() {
+        return exclusionStateDiv;
+    }
+
+    /**
+     * 除外状態区分を設定します。
+     * @param exclusionStateDiv 除外状態区分
+     */
+    public void setExclusionStateDiv(java.lang.Integer exclusionStateDiv) {
+        this.exclusionStateDiv = exclusionStateDiv;
     }
 
 }

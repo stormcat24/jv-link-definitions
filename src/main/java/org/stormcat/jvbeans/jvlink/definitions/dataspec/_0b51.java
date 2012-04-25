@@ -16,35 +16,35 @@
 package org.stormcat.jvbeans.jvlink.definitions.dataspec;
 
 /**
- * データ種別 SLOP のEnumによる表現です。
+ * データ種別 0B51 のEnumによる表現です。
  * @author jv-beans-gen
  * @since 0.1
  *
  */
-public enum _Slop implements org.stormcat.jvbeans.config.StoredDataSpec {
+public enum _0b51 implements org.stormcat.jvbeans.config.RealTimeDataSpec {
 
     INSTANCE;
 
     /**
-     * レコード種別ID {@code HC}に対応するデータ取得条件を返します。
+     * レコード種別ID {@code WF}に対応するデータ取得条件を返します。
      * @return データ取得条件
      */
-    public org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.SlopeCourseTrainingDto> _HC() {
-        return new org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.SlopeCourseTrainingDto>(this, org.stormcat.jvbeans.jvlink.definitions.ConcreteRecordTypeId.HC, org.stormcat.jvbeans.jvlink.definitions.dto.SlopeCourseTrainingDto.class);
+    public org.stormcat.jvbeans.config.condition.RealTimeOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.WinFiveDto> _WF() {
+        return new org.stormcat.jvbeans.config.condition.RealTimeOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.WinFiveDto>(this, org.stormcat.jvbeans.jvlink.definitions.ConcreteRecordTypeId.WF, org.stormcat.jvbeans.jvlink.definitions.dto.WinFiveDto.class);
     }
 
     /**
      * {@inheritDoc}
      */
     public String getName() {
-        return "坂路調教情報";
+        return "速報重勝式(WIN5)";
     }
 
     /**
      * {@inheritDoc}
      */
     public String getValue() {
-        return "SLOP";
+        return "0B51";
     }
 
 }

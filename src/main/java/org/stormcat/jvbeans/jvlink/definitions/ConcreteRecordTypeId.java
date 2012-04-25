@@ -60,6 +60,12 @@ public enum ConcreteRecordTypeId implements RecordTypeId {
 
     /** レース情報 */
     O6("レース情報", "O6"),
+    
+    /** レース情報 */
+    WF("レース情報", "WF"),
+    
+    /** レース情報 */
+    JG("レース情報", "JG"),
 
     /** 蓄積系ソフト用　蓄積情報 */
     UM("蓄積系ソフト用　蓄積情報", "UM"),
@@ -87,7 +93,13 @@ public enum ConcreteRecordTypeId implements RecordTypeId {
 
     /** 蓄積系ソフト用　血統情報 */
     BT("蓄積系ソフト用　血統情報", "BT"),
+    
+    /** 蓄積系ソフト用　マイニング情報 */
+    DM("蓄積系ソフト用　マイニング情報", "DM"),
 
+    /** 蓄積系ソフト用　マイニング情報 */
+    TM("蓄積系ソフト用　マイニング情報", "TM"),
+    
     /** 出走時点情報 */
     CK("出走時点情報", "CK"),
 
@@ -124,8 +136,7 @@ public enum ConcreteRecordTypeId implements RecordTypeId {
     /** 速報開催情報 */
     CC("速報開催情報", "CC"),
 
-    /** 速報データマイニング予想 */
-    DM("速報データマイニング予想", "DM"),
+
 
 
     ;

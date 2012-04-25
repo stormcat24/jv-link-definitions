@@ -16,21 +16,21 @@
 package org.stormcat.jvbeans.jvlink.definitions.dto;
 
  /**
- * レコードフォーマットID {@link DM} に対応するDtoです。
+ * レコードフォーマットID {@link TM} に対応するDtoです。
  * @author jv-beans-gen
  * @since 0.1
  *
  */
-@org.stormcat.jvbeans.annotation.JvBean(recordTypeId = "DM", byteLength = 303)
-public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
+@org.stormcat.jvbeans.annotation.JvBean(recordTypeId = "TM", byteLength = 141)
+public class DataMiningMatchupExpectationDto extends org.stormcat.jvbeans.jvlink.JvBindingDto {
 
     /**
-     * {@code DM}に対応したデータ区分を表現するEnumです。
+     * {@code TM}に対応したデータ区分を表現するEnumです。
      * @author jv-beans-gen
      * @since 0.3
      *
      */
-    public enum DataMiningExpectationDataDiv implements org.stormcat.jvbeans.config.DataDiv {
+    public enum DataMiningMatchupExpectationDataDiv implements org.stormcat.jvbeans.config.DataDiv {
 
         _1("前日予想(出馬発表後)", "1"),
 
@@ -55,7 +55,7 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
          * @param name 名称
          * @param value 値
          */
-        private DataMiningExpectationDataDiv(String name, String value) {
+        private DataMiningMatchupExpectationDataDiv(String name, String value) {
             this.name = name;
             this.value = value;
         }
@@ -117,8 +117,8 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
     private java.lang.String dataCreateTime;
 
     /** マイニング予想 */
-    @org.stormcat.jvbeans.annotation.JvProperty(position = 32, byteLength = 15, repeatCount = 18)
-    private java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningExpectationDto> miningExpectationItems;
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 32, byteLength = 6, repeatCount = 18)
+    private java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningMatchupExpectationDto> miningMatchupExpectationItems;
 
 
     /**
@@ -142,7 +142,7 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
      */
     @Override
     public org.stormcat.jvbeans.config.DataDiv getDataDiv() {
-        return DataMiningExpectationDataDiv.valueOf(java.lang.String.format("_%s", dataDiv));
+        return DataMiningMatchupExpectationDataDiv.valueOf(java.lang.String.format("_%s", dataDiv));
     }
 
     /**
@@ -285,16 +285,16 @@ public class DataMiningExpectationDto extends org.stormcat.jvbeans.jvlink.JvBind
      * マイニング予想を返します。
      * @return マイニング予想
      */
-    public java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningExpectationDto> getMiningExpectationItems() {
-        return miningExpectationItems;
+    public java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningMatchupExpectationDto> getMiningMatchupExpectationItems() {
+        return miningMatchupExpectationItems;
     }
 
     /**
      * マイニング予想を設定します。
-     * @param miningExpectationItems マイニング予想
+     * @param miningMatchupExpectationItems マイニング予想
      */
-    public void setMiningExpectationItems(java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningExpectationDto> miningExpectationItems) {
-        this.miningExpectationItems = miningExpectationItems;
+    public void setMiningMatchupExpectationItems(java.util.List<org.stormcat.jvbeans.jvlink.definitions.dto.child.MiningMatchupExpectationDto> miningMatchupExpectationItems) {
+        this.miningMatchupExpectationItems = miningMatchupExpectationItems;
     }
 
 }

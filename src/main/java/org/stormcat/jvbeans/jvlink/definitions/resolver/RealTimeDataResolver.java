@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2011 the Stormcat Project.
+ * Copyright 2009-2012 the Stormcat Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -140,6 +140,14 @@ public class RealTimeDataResolver {
     }
 
     /**
+     * {@code 0B17}を返します。
+     * @return {@code 0B17}
+     */
+    public static org.stormcat.jvbeans.jvlink.definitions.dataspec._0b17 _0B17() {
+        return org.stormcat.jvbeans.jvlink.definitions.dataspec._0b17.INSTANCE;
+    }
+
+    /**
      * {@code 0B41}を返します。
      * @return {@code 0B41}
      */
@@ -153,6 +161,14 @@ public class RealTimeDataResolver {
      */
     public static org.stormcat.jvbeans.jvlink.definitions.dataspec._0b42 _0B42() {
         return org.stormcat.jvbeans.jvlink.definitions.dataspec._0b42.INSTANCE;
+    }
+
+    /**
+     * {@code 0B51}を返します。
+     * @return {@code 0B51}
+     */
+    public static org.stormcat.jvbeans.jvlink.definitions.dataspec._0b51 _0B51() {
+        return org.stormcat.jvbeans.jvlink.definitions.dataspec._0b51.INSTANCE;
     }
 
 }

@@ -4,7 +4,7 @@
   <groupId>org.stormcat</groupId>
   <artifactId>jv-link-definitions</artifactId>
   <packaging>jar</packaging>
-  <version>3.5.0-RC1</version>
+  <version>4.2.0-RC1-SNAPSHOT</version>
   <name>jv-link-definitions</name>
   <url>http://jv-beans.sourceforge.jp</url>
   <licenses>

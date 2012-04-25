@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2011 the Stormcat Project.
+ * Copyright 2009-2012 the Stormcat Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,6 +49,14 @@ public class SetupDataResolver {
      */
     public static org.stormcat.jvbeans.jvlink.definitions.dataspec._Blod _BLOD() {
         return org.stormcat.jvbeans.jvlink.definitions.dataspec._Blod.INSTANCE;
+    }
+
+    /**
+     * {@code MING}を返します。
+     * @return {@code MING}
+     */
+    public static org.stormcat.jvbeans.jvlink.definitions.dataspec._Ming _MING() {
+        return org.stormcat.jvbeans.jvlink.definitions.dataspec._Ming.INSTANCE;
     }
 
     /**

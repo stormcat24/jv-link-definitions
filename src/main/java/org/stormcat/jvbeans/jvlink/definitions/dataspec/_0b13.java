@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2011 the Stormcat Project.
+ * Copyright 2009-2012 the Stormcat Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ public enum _0b13 implements org.stormcat.jvbeans.config.RealTimeDataSpec {
      * {@inheritDoc}
      */
     public String getName() {
-        return "速報データマイニング予想";
+        return "速報タイム型データマイニング予想";
     }
 
     /**

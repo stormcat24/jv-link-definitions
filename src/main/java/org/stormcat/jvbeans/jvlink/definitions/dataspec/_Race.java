@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2011 the Stormcat Project.
+ * Copyright 2009-2012 the Stormcat Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -111,6 +111,22 @@ public enum _Race implements org.stormcat.jvbeans.config.StoredDataSpec {
      */
     public org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.Odds6Dto> _O6() {
         return new org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.Odds6Dto>(this, org.stormcat.jvbeans.jvlink.definitions.ConcreteRecordTypeId.O6, org.stormcat.jvbeans.jvlink.definitions.dto.Odds6Dto.class);
+    }
+
+    /**
+     * レコード種別ID {@code WF}に対応するデータ取得条件を返します。
+     * @return データ取得条件
+     */
+    public org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.WinFiveDto> _WF() {
+        return new org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.WinFiveDto>(this, org.stormcat.jvbeans.jvlink.definitions.ConcreteRecordTypeId.WF, org.stormcat.jvbeans.jvlink.definitions.dto.WinFiveDto.class);
+    }
+
+    /**
+     * レコード種別ID {@code JG}に対応するデータ取得条件を返します。
+     * @return データ取得条件
+     */
+    public org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.HorseExclusionDto> _JG() {
+        return new org.stormcat.jvbeans.config.condition.StoredOpenCondition<org.stormcat.jvbeans.jvlink.definitions.dto.HorseExclusionDto>(this, org.stormcat.jvbeans.jvlink.definitions.ConcreteRecordTypeId.JG, org.stormcat.jvbeans.jvlink.definitions.dto.HorseExclusionDto.class);
     }
 
     /**

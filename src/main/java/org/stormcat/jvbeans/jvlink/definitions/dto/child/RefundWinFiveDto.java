@@ -20,67 +20,67 @@ package org.stormcat.jvbeans.jvlink.definitions.dto.child;
  * @since 0.1
  *
  */
-public class RefundQuinellaPlaceDto {
+public class RefundWinFiveDto {
 
-    /** 　　組番 */
-    @org.stormcat.jvbeans.annotation.JvProperty(position = 1, byteLength = 4)
+    /** 組番 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 1, byteLength = 10)
     private java.lang.String pairNo;
 
-    /** 　　払戻金 */
-    @org.stormcat.jvbeans.annotation.JvProperty(position = 5, byteLength = 9)
+    /** 重勝式払戻金 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 11, byteLength = 9)
     private java.lang.Long refundMoney;
 
-    /** 　　人気順 */
-    @org.stormcat.jvbeans.annotation.JvProperty(position = 14, byteLength = 3)
-    private java.lang.Integer betRank;
+    /** 的中票数 */
+    @org.stormcat.jvbeans.annotation.JvProperty(position = 20, byteLength = 10)
+    private java.lang.String voteCount;
 
 
     /**
-     * 　　組番を返します。
-     * @return 　　組番
+     * 組番を返します。
+     * @return 組番
      */
     public java.lang.String getPairNo() {
         return pairNo;
     }
 
     /**
-     * 　　組番を設定します。
-     * @param pairNo 　　組番
+     * 組番を設定します。
+     * @param pairNo 組番
      */
     public void setPairNo(java.lang.String pairNo) {
         this.pairNo = pairNo;
     }
 
     /**
-     * 　　払戻金を返します。
-     * @return 　　払戻金
+     * 重勝式払戻金を返します。
+     * @return 重勝式払戻金
      */
     public java.lang.Long getRefundMoney() {
         return refundMoney;
     }
 
     /**
-     * 　　払戻金を設定します。
-     * @param refundMoney 　　払戻金
+     * 重勝式払戻金を設定します。
+     * @param refundMoney 重勝式払戻金
      */
     public void setRefundMoney(java.lang.Long refundMoney) {
         this.refundMoney = refundMoney;
     }
 
     /**
-     * 　　人気順を返します。
-     * @return 　　人気順
+     * 的中票数を返します。
+     * @return 的中票数
      */
-    public java.lang.Integer getBetRank() {
-        return betRank;
+    public java.lang.String getVoteCount() {
+        return voteCount;
     }
 
     /**
-     * 　　人気順を設定します。
-     * @param betRank 　　人気順
+     * 的中票数を設定します。
+     * @param voteCount 的中票数
      */
-    public void setBetRank(java.lang.Integer betRank) {
-        this.betRank = betRank;
+    public void setVoteCount(java.lang.String voteCount) {
+        this.voteCount = voteCount;
     }
 
 }

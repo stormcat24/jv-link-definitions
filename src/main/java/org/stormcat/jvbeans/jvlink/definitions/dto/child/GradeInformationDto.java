@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2011 the Stormcat Project.
+ * Copyright 2009-2012 the Stormcat Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ public class GradeInformationDto {
     @org.stormcat.jvbeans.annotation.JvProperty(position = 5, byteLength = 60)
     private java.lang.String raceNameFull;
 
-    /** 　　競走名略称１0文字 */
+    /** 　　競走名略称10文字 */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 65, byteLength = 20)
     private java.lang.String raceNameShortChar10;
 
@@ -42,7 +42,7 @@ public class GradeInformationDto {
     @org.stormcat.jvbeans.annotation.JvProperty(position = 97, byteLength = 6)
     private java.lang.String raceNameShortChar3;
 
-    /** 　　重賞回次[第ｎ回] */
+    /** 　　重賞回次[第N回] */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 103, byteLength = 3)
     private java.lang.Integer gradeTimes;
 
@@ -104,16 +104,16 @@ public class GradeInformationDto {
     }
 
     /**
-     * 　　競走名略称１0文字を返します。
-     * @return 　　競走名略称１0文字
+     * 　　競走名略称10文字を返します。
+     * @return 　　競走名略称10文字
      */
     public java.lang.String getRaceNameShortChar10() {
         return raceNameShortChar10;
     }
 
     /**
-     * 　　競走名略称１0文字を設定します。
-     * @param raceNameShortChar10 　　競走名略称１0文字
+     * 　　競走名略称10文字を設定します。
+     * @param raceNameShortChar10 　　競走名略称10文字
      */
     public void setRaceNameShortChar10(java.lang.String raceNameShortChar10) {
         this.raceNameShortChar10 = raceNameShortChar10;
@@ -152,16 +152,16 @@ public class GradeInformationDto {
     }
 
     /**
-     * 　　重賞回次[第ｎ回]を返します。
-     * @return 　　重賞回次[第ｎ回]
+     * 　　重賞回次[第N回]を返します。
+     * @return 　　重賞回次[第N回]
      */
     public java.lang.Integer getGradeTimes() {
         return gradeTimes;
     }
 
     /**
-     * 　　重賞回次[第ｎ回]を設定します。
-     * @param gradeTimes 　　重賞回次[第ｎ回]
+     * 　　重賞回次[第N回]を設定します。
+     * @param gradeTimes 　　重賞回次[第N回]
      */
     public void setGradeTimes(java.lang.Integer gradeTimes) {
         this.gradeTimes = gradeTimes;

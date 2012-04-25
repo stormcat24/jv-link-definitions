@@ -1,5 +1,5 @@
 /*
- * Copyright 2009-2011 the Stormcat Project.
+ * Copyright 2009-2012 the Stormcat Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -140,7 +140,7 @@ public class TokubetsuTourokubaDto extends org.stormcat.jvbeans.jvlink.JvBinding
     @org.stormcat.jvbeans.annotation.JvProperty(position = 453, byteLength = 120)
     private java.lang.String raceNameNoteEng;
 
-    /** 競走名略称１0文字 */
+    /** 競走名略称10文字 */
     @org.stormcat.jvbeans.annotation.JvProperty(position = 573, byteLength = 20)
     private java.lang.String raceNameShortChar10;
 
@@ -494,16 +494,16 @@ public class TokubetsuTourokubaDto extends org.stormcat.jvbeans.jvlink.JvBinding
     }
 
     /**
-     * 競走名略称１0文字を返します。
-     * @return 競走名略称１0文字
+     * 競走名略称10文字を返します。
+     * @return 競走名略称10文字
      */
     public java.lang.String getRaceNameShortChar10() {
         return raceNameShortChar10;
     }
 
     /**
-     * 競走名略称１0文字を設定します。
-     * @param raceNameShortChar10 競走名略称１0文字
+     * 競走名略称10文字を設定します。
+     * @param raceNameShortChar10 競走名略称10文字
      */
     public void setRaceNameShortChar10(java.lang.String raceNameShortChar10) {
         this.raceNameShortChar10 = raceNameShortChar10;
