@@ -28,7 +28,7 @@ public class RaceDetailDtoTest extends DefinitionsTestBase<RaceDetailDto> {
 
     @Test
     public void test() {
-        storedTest(StoredDataResolver._RACE()._RA(), "20100601000000", DataOption.STANDARD);
+        storedTest(StoredDataResolver._RACE()._RA(), "20120401000000", DataOption.STANDARD);
     }
 
 }
